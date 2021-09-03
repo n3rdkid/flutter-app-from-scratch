@@ -25,9 +25,13 @@ final User samantha =
     User(id: 2, name: "Samantha", imageUrl: "assets/images/samantha.jpeg");
 final User tina =
     User(id: 3, name: "Tina", imageUrl: "assets/images/tina.jpeg");
-
+final User rita = User(id: 4, name: "Rita", imageUrl: "assets/images/mia.jpeg");
+final User sam =
+    User(id: 5, name: "Sam", imageUrl: "assets/images/samantha.jpeg");
+final User rina =
+    User(id: 6, name: "Rina", imageUrl: "assets/images/tina.jpeg");
 // FAVORITE CONTACTS
-List<User> favorites = [jordan, mia, samantha, tina];
+List<User> favorites = [jordan, mia, samantha, tina, rita, sam, rina];
 
 // EXAMPLE CHATS ON HOME SCREEN
 List<Message> chats = [
