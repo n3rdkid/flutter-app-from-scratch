@@ -63,7 +63,32 @@ class RecentChats extends StatelessWidget {
                         ],
                       ),
                       Column(
-                        children: [Text(chat.time), Text("New")],
+                        children: [
+                          Text(
+                            chat.time,
+                            style: TextStyle(
+                                color: Colors.grey,
+                                fontSize: 15.0,
+                                fontWeight: FontWeight.bold),
+                          ),
+                          SizedBox(height: 5),
+                          chat.unread
+                              ? Container(
+                                  width: 40,
+                                  height: 20,
+                                  alignment: Alignment.center,
+                                  decoration: BoxDecoration(
+                                      color: Theme.of(context).primaryColor,
+                                      borderRadius: BorderRadius.circular(30)),
+                                  child: Text(
+                                    "New",
+                                    style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 12,
+                                        fontWeight: FontWeight.bold),
+                                  ))
+                              : SizedBox.shrink()
+                        ],
                       )
                     ],
                   ),
