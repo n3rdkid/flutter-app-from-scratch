@@ -36,7 +36,7 @@ List<User> favorites = [jordan, mia, samantha, tina, rita, sam, rina];
 // EXAMPLE CHATS ON HOME SCREEN
 List<Message> chats = [
   Message(
-    sender: jordan,
+    sender: currentUser,
     time: '5:30 PM',
     text: 'Hey, how\'s it going? What did you do today?',
     isLiked: false,
@@ -53,7 +53,7 @@ List<Message> chats = [
     sender: samantha,
     time: '3:30 PM',
     text: 'Hey, how\'s it going? What did you do today?',
-    isLiked: false,
+    isLiked: true,
     unread: false,
   ),
   Message(
@@ -64,10 +64,10 @@ List<Message> chats = [
     unread: true,
   ),
   Message(
-    sender: jordan,
+    sender: currentUser,
     time: '5:30 PM',
     text: 'Hey, how\'s it going? What did you do today?',
-    isLiked: false,
+    isLiked: true,
     unread: true,
   ),
   Message(
@@ -78,7 +78,7 @@ List<Message> chats = [
     unread: true,
   ),
   Message(
-    sender: samantha,
+    sender: currentUser,
     time: '3:30 PM',
     text: 'Hey, how\'s it going? What did you do today?',
     isLiked: false,
