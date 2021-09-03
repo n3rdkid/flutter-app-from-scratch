@@ -1,0 +1,40 @@
+import 'package:chat_ui/widgets/category_selector.dart';
+import 'package:flutter/material.dart';
+
+class HomeScreen extends StatefulWidget {
+  @override
+  _HomeScreenState createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        elevation: 0.0,
+        title: Text(
+          "Chats",
+          style: TextStyle(
+            fontSize: 28,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        leading: IconButton(
+            icon: Icon(Icons.menu),
+            iconSize: 30,
+            onPressed: () {},
+            color: Colors.white),
+        actions: <Widget>[
+          IconButton(
+              icon: Icon(Icons.search),
+              iconSize: 30,
+              onPressed: () {},
+              color: Colors.white)
+        ],
+      ),
+      body: Column(
+        children: [CategorySelector()],
+      ),
+    );
+  }
+}
