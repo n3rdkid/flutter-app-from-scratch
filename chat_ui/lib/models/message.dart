@@ -63,4 +63,32 @@ List<Message> chats = [
     isLiked: false,
     unread: true,
   ),
+  Message(
+    sender: jordan,
+    time: '5:30 PM',
+    text: 'Hey, how\'s it going? What did you do today?',
+    isLiked: false,
+    unread: true,
+  ),
+  Message(
+    sender: mia,
+    time: '4:30 PM',
+    text: 'Hey, how\'s it going? What did you do today?',
+    isLiked: false,
+    unread: true,
+  ),
+  Message(
+    sender: samantha,
+    time: '3:30 PM',
+    text: 'Hey, how\'s it going? What did you do today?',
+    isLiked: false,
+    unread: false,
+  ),
+  Message(
+    sender: tina,
+    time: '2:30 PM',
+    text: 'Hey, how\'s it going? What did you do today?',
+    isLiked: false,
+    unread: true,
+  ),
 ];
