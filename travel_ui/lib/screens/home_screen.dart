@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:travel_ui/widgets/destination_carousel.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -61,7 +62,9 @@ class _HomeScreenState extends State<HomeScreen> {
               .entries
               .map<Widget>((e) => _buildIcons(e.key))
               .toList(),
-        )
+        ),
+        SizedBox(height: 20),
+        DestinationCarousel(),
       ],
     )));
   }
