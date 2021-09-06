@@ -71,6 +71,11 @@ class _HomeScreenState extends State<HomeScreen> {
         ],
       )),
       bottomNavigationBar: BottomNavigationBar(
+        onTap: (int value) {
+          setState(() {
+            _currentTab = value;
+          });
+        },
         showSelectedLabels: false,
         showUnselectedLabels: false,
         currentIndex: _currentTab,
