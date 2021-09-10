@@ -23,4 +23,16 @@ class Question extends Equatable {
         correctAnswer,
         answers,
       ];
+
+  factory Question.fromMap(Map<String, dynamic> map) {
+    return Question(
+      category: map['category'] ?? '',
+      difficulty: map['difficulty'] ?? '',
+      question: map['question'] ?? '',
+      correctAnswer: map['correct_answer'] ?? '',
+      answers: List<String>.from(map['incorrect_answers'] ?? [])
+        ..add(map['correct_answer'] ?? '')
+        ..shuffle(),
+    );
+  }
 }
