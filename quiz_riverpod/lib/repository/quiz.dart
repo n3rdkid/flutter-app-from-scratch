@@ -9,6 +9,8 @@ import 'package:quiz_riverpod/models/question.dart';
 import 'package:quiz_riverpod/repository/base_repository.dart';
 
 final dioProvider = Provider<Dio>((ref) => Dio());
+final quizRepositoryProvider =
+    Provider<QuizRepository>((ref) => QuizRepository(ref.read));
 
 class QuizRepository extends BaseQuizRepository {
   final Reader _read;
