@@ -19,7 +19,6 @@ class QuizController extends StateNotifier<QuizState> {
           status: QuizStatus.correct);
       return;
     }
-
     state = state.copyWith(
         selectedAnswer: answer,
         correct: state.correct..add(currentQuestion),
@@ -27,6 +26,7 @@ class QuizController extends StateNotifier<QuizState> {
   }
 
   void nextQuestion(List<Question> questions, int currentIdx) {
+    print("NExT QUESTIONS");
     state = state.copyWith(
         selectedAnswer: '',
         status: currentIdx + 1 < questions.length

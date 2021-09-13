@@ -27,8 +27,8 @@ dependencies:
   dio: ^4.0.0
   enum_to_string: ^2.0.1
   equatable: ^2.0.3
-  flutter_hooks: ^0.17.0
-  hooks_riverpod: ^0.14.0+4
+  flutter_hooks: ^0.18.0
+  hooks_riverpod: ^1.0.0-dev.7
   html_character_entities: ^1.0.0+1
   meta: ^1.2.4
 
