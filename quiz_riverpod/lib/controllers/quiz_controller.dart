@@ -3,8 +3,7 @@ import 'package:quiz_riverpod/controllers/quiz_state.dart';
 import 'package:quiz_riverpod/models/question.dart';
 
 final quizControllerProvider =
-    StateNotifierProvider.autoDispose<QuizController>(
-        (ref) => QuizController());
+    StateNotifierProvider<QuizController, QuizState>((ref) => QuizController());
 
 class QuizController extends StateNotifier<QuizState> {
   QuizController() : super(QuizState.initial());
