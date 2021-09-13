@@ -23,8 +23,10 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: CustomDrawer(),
-      // MyHomePage(title: 'Flutter Demo Home Page')
+      home: CustomDrawer(
+        child: MyHomePage(title: 'Flutter Demo Home Page'),
+      ),
+      //
     );
   }
 }

@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 
 class CustomDrawer extends HookWidget {
+  final child;
+  CustomDrawer({required this.child});
   final double maxSlide = 225;
   void toggle(AnimationController controller) =>
       {controller.isDismissed ? controller.forward() : controller.reverse()};
@@ -12,7 +14,6 @@ class CustomDrawer extends HookWidget {
         useAnimationController(duration: Duration(milliseconds: 250));
 
     var myDrawer = Container(color: Colors.red);
-    var child = Container(color: Colors.amber);
     return GestureDetector(
       onTap: () => {toggle(controller)},
       child: AnimatedBuilder(
